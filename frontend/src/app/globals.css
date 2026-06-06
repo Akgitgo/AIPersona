@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary:    #0a0a0f;
+  --bg-secondary:  #111118;
+  --bg-surface:    #16161e;
+  --bg-elevated:   #1e1e28;
+  --border:        rgba(255,255,255,0.07);
+  --border-hover:  rgba(255,255,255,0.14);
+  --text-primary:  #f0f0f5;
+  --text-secondary:#9898a8;
+  --text-muted:    #5a5a70;
+  --brand:         #5b7fff;
+  --brand-dim:     rgba(91,127,255,0.12);
+  --brand-glow:    rgba(91,127,255,0.25);
+  --success:       #34d399;
+  --warning:       #fbbf24;
+  --error:         #f87171;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ── Selection ─────────────────────────────────────────────────────────────── */
+::selection { background: var(--brand-glow); }
+
+/* ── Prose (markdown inside AI messages) ───────────────────────────────────── */
+.prose-chat { font-size: 0.9375rem; line-height: 1.65; }
+.prose-chat p { margin: 0 0 0.75em; }
+.prose-chat p:last-child { margin-bottom: 0; }
+.prose-chat ul, .prose-chat ol { padding-left: 1.4em; margin: 0 0 0.75em; }
+.prose-chat li { margin-bottom: 0.25em; }
+.prose-chat strong { color: var(--text-primary); font-weight: 600; }
+.prose-chat code {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.8125em;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  color: #a5b4fc;
+}
+.prose-chat pre {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1em;
+  overflow-x: auto;
+  margin: 0.75em 0;
+}
+.prose-chat pre code { background: none; border: none; padding: 0; }
+.prose-chat blockquote {
+  border-left: 3px solid var(--brand);
+  padding-left: 1em;
+  color: var(--text-secondary);
+  margin: 0.75em 0;
+}
+.prose-chat a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+.prose-chat h1, .prose-chat h2, .prose-chat h3 {
+  font-weight: 600;
+  margin: 1em 0 0.4em;
+  color: var(--text-primary);
+}
+.prose-chat hr { border-color: var(--border); margin: 1em 0; }
+.prose-chat table { width: 100%; border-collapse: collapse; font-size: 0.875em; }
+.prose-chat th, .prose-chat td { border: 1px solid var(--border); padding: 0.4em 0.75em; text-align: left; }
+.prose-chat th { background: var(--bg-elevated); font-weight: 600; }
+
+/* ── Gradient title ─────────────────────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #a5b4fc 0%, #818cf8 40%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Typing dots ─────────────────────────────────────────────────────────────── */
+.typing-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  display: inline-block;
+  animation: pulseDot 1.4s ease-in-out infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulseDot {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40%            { transform: scale(1.0); opacity: 1.0; }
+}
+
+/* ── SSE cursor blink ────────────────────────────────────────────────────────── */
+.streaming-cursor::after {
+  content: "▋";
+  animation: blink 1s step-start infinite;
+  color: var(--brand);
+  margin-left: 1px;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ── Focus ring ──────────────────────────────────────────────────────────────── */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

@@ -1,0 +1,124 @@
+{
+  "name": "ARYA ANAND KULKARNI",
+  "email": "kulkarniarya37@gmail.com",
+  "phone": "+91-8421678114",
+  "location": "Pune / Mumbai / Hyderabad / Bangalore / Remote",
+  "target_role": "AI Engineer Intern",
+  "target_company": "Scaler",
+  "github_url": "https://github.com/Akgitgo",
+  "github_username": "Akgitgo",
+  "linkedin_url": "https://www.linkedin.com/in/arya-kulkarni-ak4321/",
+  "portfolio_url": "https://arya-kulkarni.netlify.app/",
+  "summary": "I am an Electronics & Telecommunication Engineering graduate with hands-on experience building AI-powered applications, automation workflows, and full-stack software solutions. My expertise includes Python, JavaScript, Next.js, React, data analytics, dashboard development, and integrating LLMs and AI agents into real-world products. I have developed projects such as AI legal-medical analysis platforms, intelligent document processing systems, and automation tools while also gaining industry experience in quality assurance, operations, and technology consulting. What sets me apart is my ability to combine AI, software engineering, and business problem-solving to deliver practical, production-ready solutions.",
+  "skills": {
+    "languages": [
+      "Python",
+      "TypeScript",
+      "SQL"
+    ],
+    "frameworks": [
+      "FastAPI",
+      "LangChain",
+      "Next.js",
+      "PyTorch"
+    ],
+    "ai_ml": [
+      "RAG",
+      "LLM fine-tuning",
+      "Embeddings",
+      "Vector Search",
+      "Agents"
+    ],
+    "infrastructure": [
+      "Docker",
+      "AWS",
+      "GCP",
+      "Railway",
+      "Vercel"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "Qdrant",
+      "Redis",
+      "MongoDB"
+    ],
+    "tools": [
+      "Vapi",
+      "ElevenLabs",
+      "Deepgram",
+      "OpenAI API",
+      "Anthropic API"
+    ]
+  },
+  "experience": [
+    {
+      "title": "AI Engineer",
+      "company": "Neurology Legal Consulting INC",
+      "duration": "Jan 2026 – April 2026",
+      "location": "Remote, USA",
+      "highlights": [
+        "Developed an intelligent voice-based agent that provides medical and legal information to clients",
+        "Engineered and deployed a RAG-powered internal knowledge base for rapid information retrieval",
+        "Automated data extraction from diverse document formats using AI-driven parsing"
+      ]
+    },
+    {
+      "title": "Web Development Intern",
+      "company": "Webfudge",
+      "duration": "Oct 2025 - Jan 2026",
+      "location": "Remote, Pune",
+      "highlights": [
+        "Developed CRM platforms and analytics dashboards for business clients, optimizing Flask backend workflows and improving data visualization performance by 40%",
+        "Collaborated with cross-functional teams to design, test, and deploy scalable business applications",
+        "Enhanced reporting and data management processes through dashboard automation and workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Electronics & Telecommunications Engineering",
+      "institution": "Vishwakarma Institute of Technology, Pune",
+      "year": "2026",
+      "gpa": "8.4/10"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Apex Med Law",
+      "repo": "https://github.com/ahkapuria/AML-2026.git",
+      "description": "AI-powered legal-medical analysis platform that extracts insights from medical records and legal documents to assist case evaluation and decision-making.",
+      "tech_stack": [
+        "Next.js",
+        "Python",
+        "FastAPI",
+        "Gemini API",
+        "PostgreSQL"
+      ],
+      "highlights": [
+        "Built an end-to-end AI workflow for document analysis and report generation",
+        "Designed modular APIs and prompt pipelines for reliable extraction of medical and legal insights",
+        "Would improve the system further with RAG, vector search, and automated evaluation pipelines"
+      ]
+    }
+  ],
+  "github_repos": [
+    "https://github.com/Akgitgo/pdf-ocr-automation.git",
+    "https://github.com/Akgitgo/dentist-assistant.git",
+    "https://github.com/gracegarden1983-dev/grace-garden-1983.git"
+  ],
+  "why_scaler": "Scaler excites me because it is building impactful technology products while maintaining a strong engineering culture. I am particularly interested in working alongside talented engineers, contributing to AI-powered solutions, and solving real-world problems at scale. The opportunity to learn rapidly, take ownership, and build products used by thousands of users makes Scaler an ideal place for my growth.",
+  "why_ai_engineer": "What drives me to build AI systems is the ability to transform complex, unstructured information into useful insights and automation. Through projects involving AI-powered document analysis, intelligent assistants, and business automation, I've seen how AI can significantly improve productivity and decision-making. I enjoy bridging the gap between advanced AI capabilities and practical products that solve real user problems.",
+  "strengths": [
+    "LLM application development and prompt engineering",
+    "AI agent workflows and automation systems",
+    "Full-stack development with Next.js, React, Python, and FastAPI",
+    "Data analytics, dashboard development, and business intelligence",
+    "REST API design, backend development, and AI integrations"
+  ],
+  "honest_gaps": [
+    "Limited experience training large foundation models from scratch",
+    "Still building expertise in large-scale distributed ML infrastructure and MLOps",
+    "More experience in applied AI product development than AI research"
+  ],
+  "availability_notes": "Available for interviews and discussions on weekdays and weekends. Immediate joiner and typically respond to emails and messages within a few hours."
+}
