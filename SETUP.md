@@ -78,7 +78,7 @@ In Railway → your service → Variables tab, add all keys from `backend/.env.e
 ```
 ANTHROPIC_API_KEY      = sk-ant-...
 OPENAI_API_KEY         = sk-...
-QDRANT_URL             = https://your-cluster.qdrant.io
+QDRANT_URL             = vbvbvgc
 QDRANT_API_KEY         = your-key
 VAPI_API_KEY           = your-vapi-key
 VAPI_PHONE_NUMBER_ID   = your-phone-number-id

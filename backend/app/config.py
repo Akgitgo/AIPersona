@@ -1,6 +1,7 @@
 from functools import lru_cache
 from typing import List
 from pydantic import field_validator
+# pyrefly: ignore [missing-import]
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -8,7 +9,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     # ── LLM ──────────────────────────────────────────────────────────────────
-    ANTHROPIC_API_KEY: str
+    ANTHROPIC_API_KEY: str | None = None
     CLAUDE_MODEL: str = "claude-sonnet-4-20250514"
     CLAUDE_MAX_TOKENS: int = 1024
 
